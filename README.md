@@ -1,13 +1,4 @@
 # Dynamic Social Proof Feed
-Contributors: humayun-sarfraz
-Donate link: https://github.com/humayun-sarfraz/dynamic-social-proof-feed
-Tags: social proof, notification, woocommerce, purchases, live viewers, page views, easy digital downloads, conversion, ecommerce
-Requires at least: 5.5
-Tested up to: 6.5
-Requires PHP: 7.4
-Stable tag: 1.4.0
-License: GPLv2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Display real-time social proof popups: show WooCommerce & EDD purchases (real or fake), live/fake product viewers bar, page view alerts, and more—boost trust & conversion!
 
