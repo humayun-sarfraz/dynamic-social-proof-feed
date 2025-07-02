@@ -1,0 +1,99 @@
+.dspf-popup {
+  position: fixed;
+  z-index: 99999;
+  min-width: 260px;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 27, 77, 0.18);
+  padding: 14px 22px 14px 18px;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.5;
+  color: #23272f;
+  display: none;
+  align-items: center;
+  gap: 10px;
+  transition: box-shadow 0.3s;
+  border-left: 4px solid #2563eb;
+}
+
+.dspf-popup.dspf-bottom_left   { left: 22px; bottom: 28px; }
+.dspf-popup.dspf-bottom_right  { right: 22px; bottom: 28px; }
+.dspf-popup.dspf-top_left      { left: 22px; top: 28px; }
+.dspf-popup.dspf-top_right     { right: 22px; top: 28px; }
+
+.dspf-popup .dspf-avatar {
+  width: 40px; height: 40px; border-radius: 50%; object-fit: cover;
+  margin-right: 13px; box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  background: #e5e7eb;
+  border: 1px solid #d1d5db;
+  flex-shrink: 0;
+}
+
+.dspf-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dspf-msg {
+  font-size: 16px;
+  color: #22223b;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .dspf-popup {
+    min-width: 90vw;
+    max-width: 95vw;
+    left: 2.5vw !important;
+    right: 2.5vw !important;
+    bottom: 10px !important;
+    top: auto !important;
+    padding: 12px 10px 12px 14px;
+    font-size: 15px;
+  }
+  .dspf-popup .dspf-avatar { width: 34px; height: 34px; margin-right: 7px; }
+}
+
+/* Animations */
+.dspf-ani-bounce {
+  animation: dspfBounce 0.9s;
+}
+@keyframes dspfBounce {
+  0%   { transform: scale(0.5) translateY(80px); opacity: 0.6;}
+  60%  { transform: scale(1.03) translateY(-8px);}
+  80%  { transform: scale(0.97) translateY(4px);}
+  100% { transform: scale(1) translateY(0); opacity: 1;}
+}
+
+/* Product Viewers Bar */
+.dspf-wc-product-viewers-bar,
+#dspf-product-viewers-bar {
+  background: linear-gradient(90deg, #e0edfa 0%, #f7fafd 100%);
+  border: 1px solid #bcd0ef;
+  border-radius: 8px;
+  color: #1452b5;
+  padding: 9px 18px;
+  font-size: 15px;
+  margin: 14px 0 8px 0;
+  display: block;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 10px rgba(37,99,235,0.05);
+  transition: background 0.22s, color 0.2s;
+}
+
+@media (max-width: 600px) {
+  .dspf-wc-product-viewers-bar, #dspf-product-viewers-bar {
+    font-size: 14px;
+    padding: 7px 10px;
+    margin: 8px 0 5px 0;
+  }
+}
+
+/* Accessibility */
+.dspf-popup[aria-live="polite"] {
+  outline: none !important;
+}
